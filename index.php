@@ -15,7 +15,7 @@ $nivelCorreccion = QR_ECLEVEL_H;
 $tamano = 5;
 $rutaGuardado = "qr_coatings.png"; */
 
-$dato = "http://localhost/qrcoatings/alfredoriveiro.html";
+$dato = "http://globalinvestment.com.ve/qrcoatings/alfredoriveiro.html";
 
 $nivelCorreccion = QR_ECLEVEL_H;
 $tamano = 5;
