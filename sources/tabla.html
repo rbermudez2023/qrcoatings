@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información Corporativa Completa</title>
+    <style>
+        /* [EL CÓDIGO CSS VA AQUÍ, LO PROPORCIONO ABAJO] */
+        /* ... */
+        /* ... */
+        
+        /* 1. ESTILOS BASE Y CENTRADO */
+        
+            
+        /* Estilos para el Logo y la Imagen de Contacto */
+        .logo-empresa img {
+            max-width: 150px; /* Ajusta el tamaño del logo */
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .imagen-contacto img {
+            width: 100px; /* Tamaño de la imagen del contacto */
+            height: 100px;
+            border-radius: 50%; /* Hace que la imagen sea circular */
+            object-fit: cover;
+            margin-bottom: 25px;
+            border: 3px solid #007bff; /* Borde de color para destacar */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Contenedor Principal de la Tabla */
+        .tabla-contenedor {
+            /* Restablece el ancho al ancho fijo de la tabla */
+            width: 450px; 
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            overflow: hidden;
+            margin: 0 auto; /* Centra la tabla dentro del contenedor-principal */
+        }
+
+        /* 2. ESTRUCTURA GRID (2 COLUMNAS) */
+        .fila {
+            display: grid;
+            grid-template-columns: 50px 400px; 
+            border-bottom: 1px solid #eee;
+            gap: 0; 
+        }
+
+        .fila:last-child {
+            border-bottom: none;
+        }
+
+        .columna-icono {
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #e9e9e9; 
+            font-size: 20px; 
+            color: #333;
+        }
+
+        .columna-info {
+            padding: 10px;
+            text-align: left;
+            display: flex;
+            align-items: center; 
+        }
+
+        /* 3. MEDIA QUERY PARA RESPONSIVIDAD (Móviles) */
+        @media (max-width: 550px) {
+            
+            .contenedor-principal {
+                width: 95%; 
+                max-width: none; 
+            }
+            
+            .tabla-contenedor {
+                width: 100%; /* Ocupa el 100% del contenedor-principal */
+            }
+            
+            .fila {
+                grid-template-columns: 1fr; 
+                border-top: 1px solid #eee; 
+                border-bottom: none;
+            }
+
+            .fila:last-child {
+                border-bottom: none; 
+            }
+
+            .columna-icono {
+                padding: 10px 0; 
+                font-size: 24px;
+            }
+
+            .columna-info {
+                padding: 10px 15px;
+                text-align: center;
+                background-color: #fff; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor-principal">
+        
+        <div class="logo-empresa">
+            <img src="logo.png" alt="Logo de la Empresa">
+        </div>
+
+        <div class="imagen-contacto">
+            <img src="contacto.jpg" alt="Imagen de Persona de Contacto">
+        </div>
+
+        <div class="tabla-contenedor">
+            <h2 style="margin: 0; padding: 15px; background-color: #f1f1f1; border-bottom: 1px solid #ccc;">Detalles de Contacto</h2>
+            
+            <div class="fila">
+                <div class="columna-icono">
+                    📍 
+                </div>
+                <div class="columna-info">
+                    **Dirección Principal:** Calle Falsa 123, Ciudad de Ejemplo.
+                </div>
+            </div>
+
+            <div class="fila">
+                <div class="columna-icono">
+                    📞
+                </div>
+                <div class="columna-info">
+                    **Teléfono:** +57 123 456 7890
+                </div>
+            </div>
+
+            <div class="fila">
+                <div class="columna-icono">
+                    📧
+                </div>
+                <div class="columna-info">
+                    **Email de Contacto:** contacto@ejemplo.com
+                </div>
+            </div>
+            
+            <div class="fila">
+                <div class="columna-icono">
+                    ⏰
+                </div>
+                <div class="columna-info">
+                    **Horario:** Lunes a Viernes de 9:00 AM a 6:00 PM
+                </div>
+            </div>
+
+            <div class="fila">
+                <div class="columna-icono">
+                    📜
+                </div>
+                <div class="columna-info">
+                    **Razón Social:** Soluciones Digitales S.A.S.
+                </div>
+            </div>
+
+            <div class="fila">
+                <div class="columna-icono">
+                    🌐
+                </div>
+                <div class="columna-info">
+                    **Sitio Web:** www.nuestraempresa.com
+                </div>
+            </div>
+            
+            <div class="fila">
+                <div class="columna-icono">
+                    👤
+                </div>
+                <div class="columna-info">
+                    **Persona de Contacto:** Juan Pérez, Fundador.
+                </div>
+            </div>
+
+            <div class="fila">
+                <div class="columna-icono">
+                    💼
+                </div>
+                <div class="columna-info">
+                    **Misión:** Impulsar la innovación en el sector tecnológico.
+                </div>
+            </div>
+        </div>
+        
+    </div> </body>
+</html>

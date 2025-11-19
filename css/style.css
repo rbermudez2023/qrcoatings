@@ -1,0 +1,120 @@
+/* Estilos Generales */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    background-image: url('imagen-fondo2.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
+/* Contenedor que agrupa el logo, la imagen y la tabla */
+.contenedor-principal {
+    width: max-content; 
+    max-width: 450px; /* Ancho máximo para que no se extienda demasiado */
+    text-align: center; /* Centra los elementos de bloque y texto */
+}
+
+/* Estilos para el Logo y la Imagen de Contacto */
+ .logo-empresa img {
+    max-width: 300px; /* Ajusta el tamaño del logo */
+    height: auto;
+    margin-bottom: 20px;
+ }
+
+ .imagen-contacto img {
+    /*
+    width: 300px; 
+    height: 300px;
+    border-radius: 50%; 
+    object-fit: cover;
+    margin-bottom: 25px;
+    border: 3px solid #007bff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    max-width: 300px; /* Ajusta el tamaño del logo */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Contenedor Principal de la Tabla */
+.tabla-contenedor {
+    /* Restablece el ancho al ancho fijo de la tabla */
+    width: 450px; 
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    overflow: hidden;
+    margin: 0 auto; /* Centra la tabla dentro del contenedor-principal */
+}
+
+/* 2. ESTRUCTURA GRID (2 COLUMNAS) */
+.fila {
+    display: grid;
+    grid-template-columns: 50px 400px; 
+    border-bottom: 1px solid #eee;
+    gap: 0; 
+}
+
+.fila:last-child {
+   border-bottom: none;
+}
+
+ .columna-icono {
+   padding: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #e9e9e9; 
+   font-size: 20px; 
+   color: #333;
+ }
+
+ .columna-info {
+  padding: 10px;
+  text-align: left;
+  display: flex;
+  align-items: center; 
+  color:grey;
+}
+
+/* 3. MEDIA QUERY PARA RESPONSIVIDAD (Móviles) */
+        @media (max-width: 550px) {
+            
+            .contenedor-principal {
+                width: 95%; 
+                max-width: none; 
+            }
+            
+            .tabla-contenedor {
+                width: 100%; /* Ocupa el 100% del contenedor-principal */
+            }
+            
+            .fila {
+                grid-template-columns: 1fr; 
+                border-top: 1px solid #eee; 
+                border-bottom: none;
+            }
+
+            .fila:last-child {
+                border-bottom: none; 
+            }
+
+            .columna-icono {
+                padding: 10px 0; 
+                font-size: 24px;
+            }
+
+            .columna-info {
+                padding: 10px 15px;
+                text-align: center;
+                background-color: #fff; 
+            }
+        }

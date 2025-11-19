@@ -1,0 +1,92 @@
+/* Estilos Generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-color: #f0f2f5; */
+    background-color: none;
+    /* color: #333; */
+    margin: 0;
+    /* line-height: 1.6; */
+    height: 100%;
+    /* margin-bottom: 50px; */
+}
+
+
+
+main {
+    /* max-width: 1200px; */
+    /* margin: 2rem auto; */
+    /* margin-top: 39px;
+    /* margin: 0; */
+    /* padding: 0 1rem; */
+    /* padding: 0;  */  
+}
+
+footer {
+    /* width: 100%;
+    background-color: #1039AB;
+    /* color: #f4f7f6; */
+    /* text-align: center;
+    padding: 0;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    height: 50px; */
+}
+
+.main-principal {
+  
+  
+}
+
+
+img {
+      width:100%;
+      max-width: 450px;
+      height: auto;      
+    }
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-contacto {
+      width:100%;
+      max-width: 50px;
+      height: auto;      
+    }
+}
+
+.titulo-parrafo {
+    color: blue;
+    
+}
+
+.contenedor-grid {
+  display: grid;
+  /* Crea 3 columnas, la primera de 100px, la segunda de 2fr y la tercera auto */
+  /* grid-template-columns: 100px 2fr auto; */
+  grid-template-columns: 100px 300px;
+  /* Crea 2 filas, la primera de 100px y la segunda de 1fr */
+  /* grid-template-rows: 100px 1fr; */
+  gap: 5px; /* Espacio entre las celdas */
+  place-items: center;
+}
+
+.item {
+  background-color: lightblue;
+  border: 1px solid blue;
+  padding: 20px;
+  text-align: center;
+}
