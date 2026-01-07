@@ -33,7 +33,7 @@ $im = imagecreatefrompng($pngfile);
 // 3. Definimos tus nuevos colores (R, G, B)
 // Ejemplo: Fondo Gris Claro y Código Rojo Industrial
 $fondoR = 255; $fondoG = 255; $fondoB = 255;
-$codeR  = 254; $codeG  = 237;   $codeB  = 1;
+$codeR  = 255; $codeG  = 128;   $codeB  = 0;
 
 // 4. Buscamos el índice del color negro y blanco en la imagen generada
 $indexNegro = imagecolorexact($im, 0, 0, 0);
