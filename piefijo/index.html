@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Footer con Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Encabezado de la página</h1>
+    </header>
+    <main>
+        <p>
+
+        Este es el contenido principal. Si hay poco contenido, el footer se pegará abajo. Si hay mucho contenido, la página se alargará naturalmente.
+
+        1. Contenedor Principal (body): Se le aplica display: flex y flex-direction: column para organizar sus elementos hijos (header, main, footer) en una columna. 
+
+        2. min-height: 100vh: Esta propiedad en el body asegura que el cuerpo de la página ocupe al menos el 100% de la altura visible de la ventana del navegador (la vista actual o "viewport"), incluso si el contenido es breve. 
+
+        3. Contenido Principal (main): Se le asigna flex: 1. Esto hace que la etiqueta MAIN (o cualquier otro contenedor de contenido principal) crezca y ocupe todo el espacio vertical restante después del header. De esta manera, el footer es empujado automáticamente hacia el fondo. 
+
+        4. footer: Simplemente se coloca al final de la estructura dentro del body. No necesita propiedades especiales de posicionamiento para este caso, ya que Flexbox se encarga de la distribución. 
+
+        REPETIMOS
+
+        Este es el contenido principal. Si hay poco contenido, el footer se pegará abajo. Si hay mucho contenido, la página se alargará naturalmente.
+
+        1. Contenedor Principal (body): Se le aplica display: flex y flex-direction: column para organizar sus elementos hijos (header, main, footer) en una columna. 
+
+        2. min-height: 100vh: Esta propiedad en el body asegura que el cuerpo de la página ocupe al menos el 100% de la altura visible de la ventana del navegador (la vista actual o "viewport"), incluso si el contenido es breve. 
+
+        3. Contenido Principal (main): Se le asigna flex: 1. Esto hace que la etiqueta MAIN (o cualquier otro contenedor de contenido principal) crezca y ocupe todo el espacio vertical restante después del header. De esta manera, el footer es empujado automáticamente hacia el fondo. 
+
+        4. footer: Simplemente se coloca al final de la estructura dentro del body. No necesita propiedades especiales de posicionamiento para este caso, ya que Flexbox se encarga de la distribución. 
+
+        REPETIMOS
+
+        </p>
+        <!-- Más contenido aquí -->
+    </main>
+    <footer>
+        <p>&copy; 2025 - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
